@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerlifesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\input\\swipedetectionsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\input\\swipedetectionsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\swipedetectionsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerLifeSystem.cs",
               "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerLifeSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerLifeSystem.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAA5wC0AAAAfAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwDUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T10:56:38.565Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Input\\SwipeDetectionSystem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T10:39:28.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T10:39:28.768Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwCYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T08:43:54.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T08:43:54.657Z"
             }
           ]
         }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class PlayerLifeSystem : MonoBehaviour
+public class PlayerHealthSystem : MonoBehaviour
 {
-    private Collider _pCollider;
+    private Collider _pCollider; 
     private Renderer _renderer;
     private bool _isBlinking = false;
 
@@ -13,7 +13,8 @@ public class PlayerLifeSystem : MonoBehaviour
     private float _blinkDuration = 1f;
     [SerializeField]
     private float _blinkInterval = 0.1f;
-
+    [SerializeField]
+    private int _currentHealth = 3;
 
     void Start()
     {
@@ -24,7 +25,18 @@ public class PlayerLifeSystem : MonoBehaviour
 
     void Update()
     {
+        PlayerDied();
+    }
 
+    private void PlayerDied()
+    {
+        if (_currentHealth == 0)
+        {
+
+            Debug.LogError("GAME OVER");
+
+            EventManager.PlayerDied();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -33,7 +45,7 @@ public class PlayerLifeSystem : MonoBehaviour
         {
             StartCoroutine(IgnoreCollisionForSeconds(collision.collider, 0.5f));
             StartCoroutine(Blink());
-            Debug.LogError("zderzenie");
+            _currentHealth -= 1;
         }
     }
 
@@ -50,17 +62,11 @@ public class PlayerLifeSystem : MonoBehaviour
 
         while (elapsedTime < _blinkDuration)
         {
-            // Zmiana stanu widocznoœci
             _renderer.enabled = !_renderer.enabled;
-
-            // Czekaj przez interwa³ migotania
             yield return new WaitForSeconds(_blinkInterval);
-
-            // Aktualizacja czasu
             elapsedTime += _blinkInterval;
         }
 
-        // Upewnij siê, ¿e gracz jest widoczny po zakoñczeniu migotania
         _renderer.enabled = true;
 
         _isBlinking = false;

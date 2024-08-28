@@ -19,7 +19,7 @@ public class PlayerMoveSystem : MonoBehaviour
 
     LayerMask groundLayer;
     private float horizontalInput;
-    private float strafeSpeed;
+    private float strafeSpeed = 5f;
 
     void Start()
     {
@@ -32,12 +32,11 @@ public class PlayerMoveSystem : MonoBehaviour
     void Update()
     {
         GroundDetect();
-        GetInput();
     }
 
     private void FixedUpdate()
     {
-        Move();
+        MoveForward();
     }
 
     private void GroundDetect()
@@ -45,45 +44,31 @@ public class PlayerMoveSystem : MonoBehaviour
         isGrounded = Physics.Raycast(transform.position, Vector3.down, groundDistance, groundLayer);
 
         Debug.DrawRay(transform.position, Vector3.down * groundDistance, Color.red);
+    }
 
-        if (isGrounded && Input.GetMouseButtonDown(0))
+    public void Jump()
+    {
+        if (isGrounded)
         {
-            Debug.Log("Player is grounded");
-            Jump();
-        }
-        else
-        {
-            Debug.Log("Player is not grounded");
+            _rb.velocity = new Vector3(_rb.velocity.x, jumpForce, _rb.velocity.z);
         }
     }
 
-    private void GetInput()
+    public void MoveLeft()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+        _rb.velocity = new Vector3(-moveSpeed, _rb.velocity.y, _rb.velocity.z);
+        Debug.Log("Gracz przesuwa siê w lewo!");
     }
 
-    private void Jump()
+    public void MoveRight()
     {
-        _rb.velocity = new Vector3(_rb.velocity.x, jumpForce, _rb.velocity.z);
+        _rb.velocity = new Vector3(moveSpeed, _rb.velocity.y, _rb.velocity.z);
+        Debug.Log("Gracz przesuwa siê w prawo!");
     }
 
-    private void Move() 
+    private void MoveForward()
     {
-        Vector3 moveForward = transform.forward * moveSpeed;
-
-        Vector3 horizontalMovement = transform.right * horizontalInput * strafeSpeed;
-
-        Vector3 movement = moveForward + horizontalMovement;
-        movement.y = _rb.velocity.y;  // Zachowanie obecnej prêdkoœci pionowej
-
-        _rb.velocity = movement;
-
-        /*var moveDirection = Vector3.forward;
-        Vector3 newVelocity = moveDirection.normalized * moveSpeed;
-
-        //zachowanie obecnej prêdkoœci pionowej
-        newVelocity.y = _rb.velocity.y;
-        _rb.velocity = newVelocity;*/
-
+        // Poruszaj siê do przodu ca³y czas
+        _rb.velocity = new Vector3(_rb.velocity.x, _rb.velocity.y, moveSpeed);
     }
 }

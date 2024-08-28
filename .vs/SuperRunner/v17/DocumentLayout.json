@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "F:\\Projekty\\Portfolio\\SuperRunner\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\player\\playerlifesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerlifesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Skybox Cubemap Extended\\Core\\Editor\\SkyboxExtendedHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Skybox Cubemap Extended\\Core\\Editor\\SkyboxExtendedHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\input\\swipedetectionsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\swipedetectionsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,28 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SkyboxExtendedHub.cs",
-              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Skybox Cubemap Extended\\Core\\Editor\\SkyboxExtendedHub.cs",
-              "RelativeDocumentMoniker": "Assets\\Skybox Cubemap Extended\\Core\\Editor\\SkyboxExtendedHub.cs",
-              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Skybox Cubemap Extended\\Core\\Editor\\SkyboxExtendedHub.cs",
-              "RelativeToolTip": "Assets\\Skybox Cubemap Extended\\Core\\Editor\\SkyboxExtendedHub.cs",
+              "DocumentIndex": 0,
+              "Title": "PlayerLifeSystem.cs",
+              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerLifeSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerLifeSystem.cs",
+              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerLifeSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerLifeSystem.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA5wC0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T09:28:40.405Z"
+              "WhenOpened": "2024-08-28T10:56:38.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "SwipeDetectionSystem.cs",
+              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Input\\SwipeDetectionSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\SwipeDetectionSystem.cs",
+              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Input\\SwipeDetectionSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\SwipeDetectionSystem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T10:39:28.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerMoveSystem.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
               "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwEUAAAAYAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T08:43:54.657Z",
               "EditorCaption": ""

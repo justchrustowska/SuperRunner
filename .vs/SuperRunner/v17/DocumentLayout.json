@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "F:\\Projekty\\Portfolio\\SuperRunner\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\player\\playerscoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerscoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\player\\playerhealthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\configs\\chunkslist\\chunklistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\configs\\chunkslist\\chunklistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\chunkspawner\\chunkspawnsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chunkspawner\\chunkspawnsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\player\\playerhealthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\configs\\chunkslist\\chunklistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\configs\\chunkslist\\chunklistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\chunkspawner\\chunkspawnsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chunkspawner\\chunkspawnsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "PlayerScoreSystem.cs",
+              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerScoreSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerScoreSystem.cs",
+              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerScoreSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerScoreSystem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T08:12:35.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerMoveSystem.cs",
+              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
+              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAcwFIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T18:31:50.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ChunkSpawnSystem.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\ChunkSpawner\\ChunkSpawnSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChunkSpawner\\ChunkSpawnSystem.cs",
@@ -42,12 +76,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ChunkSpawner\\ChunkSpawnSystem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:02:56.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T13:02:56.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ChunkListConfig.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Configs\\ChunksList\\ChunkListConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Configs\\ChunksList\\ChunkListConfig.cs",
@@ -55,12 +88,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Configs\\ChunksList\\ChunkListConfig.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T12:56:36.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T12:56:36.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EventManager.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\EventManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EventManager.cs",
@@ -79,21 +111,23 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCsAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T12:28:43.378Z"
+              "WhenOpened": "2024-08-28T12:28:43.378Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "PlayerHealthSystem.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerHealthSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealthSystem.cs",
               "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerHealthSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealthSystem.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwCEAAAAJAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwDAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T12:24:49.578Z"
+              "WhenOpened": "2024-08-28T12:24:49.578Z",
+              "EditorCaption": ""
             }
           ]
         }

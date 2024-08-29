@@ -31,7 +31,6 @@ public class PlayerMoveSystem : MonoBehaviour
         groundLayer = LayerMask.GetMask("Ground");
     }
 
-   
     void Update()
     {
         GroundDetect();
@@ -53,7 +52,6 @@ public class PlayerMoveSystem : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("Ground"))
         {
-            //isGrounded = true;
             _jumpCount = 0;
         }
     }
@@ -81,7 +79,6 @@ public class PlayerMoveSystem : MonoBehaviour
 
     private void MoveForward()
     {
-        // Poruszaj siê do przodu ca³y czas
         _rb.velocity = new Vector3(_rb.velocity.x, _rb.velocity.y, moveSpeed);
     }
 }

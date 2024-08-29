@@ -14,6 +14,9 @@ public class PlayerMoveSystem : MonoBehaviour
     [SerializeField]
     public float jumpForce = 7f;
 
+    private int _jumpCount = 0;
+    private int _maxJumps = 2;
+
     private Rigidbody _rb;
     private Joystick _joystick;
 
@@ -46,11 +49,21 @@ public class PlayerMoveSystem : MonoBehaviour
         Debug.DrawRay(transform.position, Vector3.down * groundDistance, Color.red);
     }
 
+    private void OnCollisionEnter(Collision coll)
+    {
+        if (coll.gameObject.CompareTag("Ground"))
+        {
+            //isGrounded = true;
+            _jumpCount = 0;
+        }
+    }
+
     public void Jump()
     {
-        if (isGrounded)
+        if (_jumpCount < _maxJumps)
         {
             _rb.velocity = new Vector3(_rb.velocity.x, jumpForce, _rb.velocity.z);
+            _jumpCount++;
         }
     }
 

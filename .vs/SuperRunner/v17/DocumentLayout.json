@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "F:\\Projekty\\Portfolio\\SuperRunner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\player\\playerscoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-StylizedWater.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\GeneratedFromGraph-StylizedWater.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-Water.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\GeneratedFromGraph-Water.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Art\\Shaders\\Water.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Art\\Shaders\\Water.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\player\\playerscoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerscoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,6 +55,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GeneratedFromGraph-StylizedWater.shader",
+              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-StylizedWater.shader",
+              "RelativeDocumentMoniker": "Temp\\GeneratedFromGraph-StylizedWater.shader",
+              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-StylizedWater.shader",
+              "RelativeToolTip": "Temp\\GeneratedFromGraph-StylizedWater.shader",
+              "ViewState": "AQIAAD4JAAAAAAAAAAAowHEJAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2024-09-10T19:59:18.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GeneratedFromGraph-Water.shader",
+              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-Water.shader",
+              "RelativeDocumentMoniker": "Temp\\GeneratedFromGraph-Water.shader",
+              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-Water.shader",
+              "RelativeToolTip": "Temp\\GeneratedFromGraph-Water.shader",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2024-09-10T17:42:05.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Water.shader",
+              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Art\\Shaders\\Water.shader",
+              "RelativeDocumentMoniker": "Assets\\Art\\Shaders\\Water.shader",
+              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Art\\Shaders\\Water.shader",
+              "RelativeToolTip": "Assets\\Art\\Shaders\\Water.shader",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2024-09-10T17:17:15.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PlayerScoreSystem.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerScoreSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerScoreSystem.cs",
@@ -50,12 +99,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerScoreSystem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T08:12:35.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T08:12:35.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "PlayerMoveSystem.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
@@ -63,12 +111,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAcwFIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T18:31:50.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T18:31:50.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ChunkSpawnSystem.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\ChunkSpawner\\ChunkSpawnSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChunkSpawner\\ChunkSpawnSystem.cs",
@@ -80,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ChunkListConfig.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Configs\\ChunksList\\ChunkListConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Configs\\ChunksList\\ChunkListConfig.cs",
@@ -92,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "EventManager.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\EventManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EventManager.cs",
@@ -100,12 +147,11 @@
               "RelativeToolTip": "Assets\\Scripts\\EventManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T12:41:32.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T12:41:32.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -113,12 +159,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwCsAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T12:28:43.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T12:28:43.378Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PlayerHealthSystem.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerHealthSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealthSystem.cs",
@@ -126,8 +171,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealthSystem.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAwwDAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T12:24:49.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T12:24:49.578Z"
             }
           ]
         }

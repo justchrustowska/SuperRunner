@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "F:\\Projekty\\Portfolio\\SuperRunner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-StylizedWater.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\GeneratedFromGraph-StylizedWater.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|f:\\projekty\\portfolio\\superrunner\\assets\\scripts\\obstacles\\movingobstaclesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\movingobstaclesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-Water.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\GeneratedFromGraph-Water.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\chunkspawner\\chunkspawnsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chunkspawner\\chunkspawnsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Art\\Shaders\\Water.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Art\\Shaders\\Water.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\player\\playerscoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\configs\\chunkslist\\chunklistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\configs\\chunkslist\\chunklistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|F:\\Projekty\\Portfolio\\SuperRunner\\assets\\scripts\\chunkspawner\\chunkspawnsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8FF71E8-C647-6365-930C-0C06C129F0B8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chunkspawner\\chunkspawnsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,39 +47,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GeneratedFromGraph-StylizedWater.shader",
-              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-StylizedWater.shader",
-              "RelativeDocumentMoniker": "Temp\\GeneratedFromGraph-StylizedWater.shader",
-              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-StylizedWater.shader",
-              "RelativeToolTip": "Temp\\GeneratedFromGraph-StylizedWater.shader",
-              "ViewState": "AQIAAD4JAAAAAAAAAAAowHEJAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-09-10T19:59:18.197Z",
+              "Title": "MovingObstacleSystem.cs",
+              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Obstacles\\MovingObstacleSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\MovingObstacleSystem.cs",
+              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Obstacles\\MovingObstacleSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\MovingObstacleSystem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T13:18:49.997Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GeneratedFromGraph-Water.shader",
-              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-Water.shader",
-              "RelativeDocumentMoniker": "Temp\\GeneratedFromGraph-Water.shader",
-              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Temp\\GeneratedFromGraph-Water.shader",
-              "RelativeToolTip": "Temp\\GeneratedFromGraph-Water.shader",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-09-10T17:42:05.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Water.shader",
-              "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Art\\Shaders\\Water.shader",
-              "RelativeDocumentMoniker": "Assets\\Art\\Shaders\\Water.shader",
-              "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Art\\Shaders\\Water.shader",
-              "RelativeToolTip": "Assets\\Art\\Shaders\\Water.shader",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-09-10T17:17:15.265Z"
             },
             {
               "$type": "Document",
@@ -103,31 +71,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "PlayerMoveSystem.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
               "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMoveSystem.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAcwFIAAAAFAAAA",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T18:31:50.95Z"
+              "WhenOpened": "2024-08-28T18:31:50.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "ChunkSpawnSystem.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\ChunkSpawner\\ChunkSpawnSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChunkSpawner\\ChunkSpawnSystem.cs",
               "ToolTip": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\ChunkSpawner\\ChunkSpawnSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\ChunkSpawner\\ChunkSpawnSystem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABUAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:02:56.126Z"
+              "WhenOpened": "2024-08-28T13:02:56.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "ChunkListConfig.cs",
               "DocumentMoniker": "F:\\Projekty\\Portfolio\\SuperRunner\\Assets\\Scripts\\Configs\\ChunksList\\ChunkListConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Configs\\ChunksList\\ChunkListConfig.cs",

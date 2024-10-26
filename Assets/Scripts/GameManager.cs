@@ -35,12 +35,12 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                dashCooldownIcon.fillAmount = 0f;
+                dashCooldownIcon.fillAmount = 1f;
                 isCooldownActive = false;
             }
         }
     }
-
+         
     void OnEnable()
     {
         EventManager.OnPlayerDeath += ShowFailWindow;
@@ -74,24 +74,11 @@ public class GameManager : MonoBehaviour
 
     public void DashCooldown()
     {
-        _cooldownTimer = _cooldownDuration;
-        isCooldownActive = true;
-        dashCooldownIcon.fillAmount = 1.0f;
+        if (!isCooldownActive)
+        {
+            _cooldownTimer = _cooldownDuration;
+            isCooldownActive = true;
+            dashCooldownIcon.fillAmount = 1.0f;
+        }
     }
-
-   
-
-    /* IEnumerator ColldownAnimation()
-     {
-         float cooldownTime = _cooldownDuration;
-
-         while (cooldownTime > 0)
-         {
-             cooldownTime -= Time.deltaTime;
-             dashCooldownIcon.fillAmount = cooldownTime / _cooldownDuration;
-             yield return null;
-         }
-
-         dashCooldownIcon.fillAmount = 0f;
-     }*/
 }

@@ -107,14 +107,15 @@ public class PlayerMoveSystem : MonoBehaviour
 
     private void DashCooldown()
     {
-        if (_cooldownTimer > 0)
+        if (_cooldownTimer > 0 && _dashCooldown)
         {
             _cooldownTimer -= Time.deltaTime;
 
         }
         else
         {
-            _dashCooldown = false; //tu nie dziala timer
+            _dashCooldown = false;
+            _cooldownTimer = _cooldownDuration;
         }
 
     }

@@ -13,20 +13,24 @@ public class PlayerMoveSystem : MonoBehaviour
     public float moveSpeed = 5f;
     [SerializeField]
     public float jumpForce = 7f;
+    [SerializeField]
+    public float dashSpeed = 10f;
 
     private int _jumpCount = 0;
     private int _maxJumps = 2;
 
-    private Rigidbody _rb;
-    private Joystick _joystick;
-
-    LayerMask groundLayer;
     private float horizontalInput;
-    private float strafeSpeed = 5f;
+    private float _dashTime = 0.5f;
+    private float _cooldownDuration = 3f;
+    private float _cooldownTimer;
+
+    public bool _dashCooldown;
+
+    private Rigidbody _rb;
+    LayerMask groundLayer;
 
     void Start()
     {
-        _joystick = FindObjectOfType<Joystick>();
         _rb = GetComponent<Rigidbody>();
         groundLayer = LayerMask.GetMask("Ground");
     }
@@ -34,6 +38,8 @@ public class PlayerMoveSystem : MonoBehaviour
     void Update()
     {
         GroundDetect();
+
+        DashCooldown();
     }
 
     private void FixedUpdate()
@@ -56,6 +62,7 @@ public class PlayerMoveSystem : MonoBehaviour
         }
     }
 
+
     public void Jump()
     {
         if (_jumpCount < _maxJumps)
@@ -68,17 +75,58 @@ public class PlayerMoveSystem : MonoBehaviour
     public void MoveLeft()
     {
         _rb.velocity = new Vector3(-moveSpeed, _rb.velocity.y, _rb.velocity.z);
-        Debug.Log("Gracz przesuwa siê w lewo!");
     }
 
     public void MoveRight()
     {
         _rb.velocity = new Vector3(moveSpeed, _rb.velocity.y, _rb.velocity.z);
-        Debug.Log("Gracz przesuwa siê w prawo!");
     }
 
     private void MoveForward()
     {
         _rb.velocity = new Vector3(_rb.velocity.x, _rb.velocity.y, moveSpeed);
+    }
+
+    private void Dash()
+    {
+        if (!_dashCooldown)
+        {
+            _dashCooldown = true;
+            StartCoroutine(StartDash());
+        }
+    }
+
+    IEnumerator StartDash()
+    {
+        moveSpeed = dashSpeed;
+
+        yield return new WaitForSeconds(_dashTime);
+
+        moveSpeed = 5f;
+    }
+
+    private void DashCooldown()
+    {
+        if (_cooldownTimer > 0)
+        {
+            _cooldownTimer -= Time.deltaTime;
+
+        }
+        else
+        {
+            _dashCooldown = false; //tu nie dziala timer
+        }
+
+    }
+
+
+    void OnEnable()
+    {
+        EventManager.OnPlayerDash += Dash;
+    }
+
+    void OnDisable()
+    {
+        EventManager.OnPlayerDash -= Dash;
     }
 }

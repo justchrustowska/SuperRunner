@@ -11,6 +11,7 @@ public class PlayerScoreSystem : MonoBehaviour
 
    private float _distanceTravelled;
    private Vector3 _startPos;
+   public DistanceRecordConfig _newRecordConfig;
 
    public static event Action<double> OnPlayerDeathWithDistance;
 
@@ -36,7 +37,16 @@ public class PlayerScoreSystem : MonoBehaviour
     {
         double roundedDistance = Mathf.Round(_distanceTravelled);
         OnPlayerDeathWithDistance?.Invoke(roundedDistance);
+        CheckNewRecord();
     }
 
-
+    private void CheckNewRecord()
+    {
+        var currentDistance = Mathf.Round(_distanceTravelled);
+        if (currentDistance > _newRecordConfig.newRecord)
+        {
+            _newRecordConfig.newRecord = currentDistance;
+        }
+        Debug.LogError(currentDistance); //dodac warunek gdy zostanie ustanowiony nowy rekord
+    }
 }

@@ -10,7 +10,9 @@ public class PlayerMoveSystem : MonoBehaviour
     [SerializeField]
     public float groundDistance = 0.5f;
     [SerializeField]
-    public float moveSpeed = 5f;
+    public float moveSpeed = 10f;
+    [SerializeField]
+    public float swipeSpeed = 5f;
     [SerializeField]
     public float jumpForce = 7f;
     [SerializeField]
@@ -117,7 +119,6 @@ public class PlayerMoveSystem : MonoBehaviour
             _dashCooldown = false;
             _cooldownTimer = _cooldownDuration;
         }
-
     }
 
 

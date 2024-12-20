@@ -1,24 +1,31 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{A8FF71E8-C647-6365-930C-0C06C129F0B8}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{e871ffa8-47c6-6563-930c-0c06c129f0b8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{B4C00E56-7460-A986-C9DD-44DC6C8F53B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{560ec0b4-6074-86a9-c9dd-44dc6c8f53b1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kTools.Mirrors.Runtime", "kTools.Mirrors.Runtime.csproj", "{06e77033-54c2-d652-2ee3-ca0fbbb971c8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kTools.Mirrors.Editor", "kTools.Mirrors.Editor.csproj", "{a58deb3f-e50d-362b-a583-65d591ce8d01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kTools.Mirrors.Editor.Tests", "kTools.Mirrors.Editor.Tests.csproj", "{bb28f016-b0f2-b2b2-f5d2-79639331c0e9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A8FF71E8-C647-6365-930C-0C06C129F0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8FF71E8-C647-6365-930C-0C06C129F0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8FF71E8-C647-6365-930C-0C06C129F0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8FF71E8-C647-6365-930C-0C06C129F0B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B4C00E56-7460-A986-C9DD-44DC6C8F53B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4C00E56-7460-A986-C9DD-44DC6C8F53B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4C00E56-7460-A986-C9DD-44DC6C8F53B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4C00E56-7460-A986-C9DD-44DC6C8F53B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{e871ffa8-47c6-6563-930c-0c06c129f0b8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e871ffa8-47c6-6563-930c-0c06c129f0b8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560ec0b4-6074-86a9-c9dd-44dc6c8f53b1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560ec0b4-6074-86a9-c9dd-44dc6c8f53b1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06e77033-54c2-d652-2ee3-ca0fbbb971c8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06e77033-54c2-d652-2ee3-ca0fbbb971c8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a58deb3f-e50d-362b-a583-65d591ce8d01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a58deb3f-e50d-362b-a583-65d591ce8d01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{bb28f016-b0f2-b2b2-f5d2-79639331c0e9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{bb28f016-b0f2-b2b2-f5d2-79639331c0e9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

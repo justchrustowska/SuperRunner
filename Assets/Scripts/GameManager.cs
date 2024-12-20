@@ -8,14 +8,15 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public GameObject failWindow;
+    public GameObject newRecordWindow;
     public TextMeshProUGUI _distanceTxt;
     public TextMeshProUGUI _collectedCoinsTxt;
     public Image dashCooldownIcon;
+    public bool isCooldownActive = false;
 
     private float _cooldownDuration = 3f;
     private float _cooldownTimer;
-
-    public bool isCooldownActive = false;
+    private int _distance;
 
 
     private void Awake()

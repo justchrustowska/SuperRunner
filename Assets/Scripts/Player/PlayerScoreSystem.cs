@@ -14,6 +14,7 @@ public class PlayerScoreSystem : MonoBehaviour
    public DistanceRecordConfig _newRecordConfig;
 
    public static event Action<double> OnPlayerDeathWithDistance;
+   public static event Action OnNewRecordDistance;
 
     private void Awake()
     {
@@ -46,7 +47,8 @@ public class PlayerScoreSystem : MonoBehaviour
         if (currentDistance > _newRecordConfig.newRecord)
         {
             _newRecordConfig.newRecord = currentDistance;
+            NewRecordDistance?.Invoke();
         }
-        Debug.LogError(currentDistance); //dodac warunek gdy zostanie ustanowiony nowy rekord
+        Debug.LogError(currentDistance); //dodac warunek gdy zostanie ustanowiony nowy rekord 
     }
 }

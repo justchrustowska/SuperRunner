@@ -7,9 +7,10 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject failWindow;
+    public GameObject gameOverWindow;
     public GameObject newRecordWindow;
-    public TextMeshProUGUI _distanceTxt;
+    public TextMeshProUGUI distanceTxt;
+    public TextMeshProUGUI distanceScoreTxt;
     public TextMeshProUGUI _collectedCoinsTxt;
     public Image dashCooldownIcon;
     public bool isCooldownActive = false;
@@ -44,22 +45,25 @@ public class GameManager : MonoBehaviour
          
     void OnEnable()
     {
-        EventManager.OnPlayerDeath += ShowFailWindow;
+        EventManager.OnPlayerDeath += ShowGameOverlWindow;
         EventManager.OnPlayerDash += DashCooldown;
         PlayerScoreSystem.OnPlayerDeathWithDistance += SaveFinalDistance;
+        PlayerScoreSystem.OnNewRecordDistance += 
     }
 
     void OnDisable()
     {
-        EventManager.OnPlayerDeath -= ShowFailWindow;
+        EventManager.OnPlayerDeath -= ShowGameOverlWindow;
         EventManager.OnPlayerDash -= DashCooldown;
         PlayerScoreSystem.OnPlayerDeathWithDistance -= SaveFinalDistance;
     }
 
-    void ShowFailWindow()
+    void ShowGameOverlWindow()
     {
-        failWindow.SetActive(true);
+        gameOverWindow.SetActive(true);
         Time.timeScale = 0f;
+        
+        if 
     }
 
     public void RestartGame()
@@ -70,7 +74,13 @@ public class GameManager : MonoBehaviour
 
     private void SaveFinalDistance(double roundedDistance)
     {
-        _distanceTxt.text = "Distance: " + roundedDistance.ToString();
+        distanceTxt.text = "Distance: " + roundedDistance.ToString();
+        distanceScoreTxt.text = "Distance: " + roundedDistance.ToString();
+    }
+
+    private void CheckNewRecordDistance()
+    {
+        
     }
 
     public void DashCooldown()

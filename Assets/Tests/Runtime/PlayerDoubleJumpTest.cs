@@ -15,7 +15,7 @@ namespace SuperRunner
             UnityEngine.SceneManagement.SceneManager.LoadScene("Level_1");
             yield return null;
 
-            var player = GameObject.FindObjectOfType<PlayerMoveSystem>();
+            var player = GameObject.FindObjectOfType<PlayerController>();
             Assert.IsNotNull(player, "Player not found");
 
             int jumpLimit = 2;

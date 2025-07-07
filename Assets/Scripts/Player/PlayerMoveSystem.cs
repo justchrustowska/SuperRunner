@@ -1,134 +1,131 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class PlayerMoveSystem : MonoBehaviour
+namespace SuperRunner
 {
-    [SerializeField] 
-    public bool isGrounded;
-    [SerializeField]
-    public float groundDistance = 0.5f;
-    [SerializeField]
-    public float moveSpeed = 10f;
-    [SerializeField]
-    public float swipeSpeed = 5f;
-    [SerializeField]
-    public float jumpForce = 7f;
-    [SerializeField]
-    public float dashSpeed = 10f;
-
-    private int _jumpCount = 0;
-    private int _maxJumps = 2;
-
-    private float horizontalInput;
-    private float _dashTime = 0.5f;
-    private float _cooldownDuration = 3f;
-    private float _cooldownTimer;
-
-    public bool _dashCooldown;
-
-    private Rigidbody _rb;
-    LayerMask groundLayer;
-
-    void Start()
+    public class PlayerMoveSystem : MonoBehaviour
     {
-        _rb = GetComponent<Rigidbody>();
-        groundLayer = LayerMask.GetMask("Ground");
-    }
+        [SerializeField] private float groundDistance = 0.5f;
+        [SerializeField] private float moveSpeed = 10f;
+        [SerializeField] private float swipeSpeed = 5f;
+        [SerializeField] private float jumpForce = 7f;
+        [SerializeField] private float dashSpeed = 10f;
 
-    void Update()
-    {
-        GroundDetect();
+        private int _jumpCount = 0;
+        private int _maxJumps = 2;
+        private float _horizontalInput;
+        private float _dashTime = 0.5f;
+        private float _cooldownDuration = 3f;
+        private float _cooldownTimer;
+        private bool _dashCooldown;
+        private Rigidbody _rb;
+        
+        public bool isGrounded;
+        
+        LayerMask groundLayer;
 
-        DashCooldown();
-    }
-
-    private void FixedUpdate()
-    {
-        MoveForward();
-    }
-
-    private void GroundDetect()
-    {
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, groundDistance, groundLayer);
-
-        Debug.DrawRay(transform.position, Vector3.down * groundDistance, Color.red);
-    }
-
-    private void OnCollisionEnter(Collision coll)
-    {
-        if (coll.gameObject.CompareTag("Ground"))
+        void Start()
         {
-            _jumpCount = 0;
+            _rb = GetComponent<Rigidbody>();
+            groundLayer = LayerMask.GetMask("Ground");
         }
-    }
 
-
-    public void Jump()
-    {
-        if (_jumpCount < _maxJumps)
+        void Update()
         {
-            _rb.velocity = new Vector3(_rb.velocity.x, jumpForce, _rb.velocity.z);
-            _jumpCount++;
+            GroundDetect();
+
+            DashCooldown();
         }
-    }
 
-    public void MoveLeft()
-    {
-        _rb.velocity = new Vector3(-moveSpeed, _rb.velocity.y, _rb.velocity.z);
-    }
-
-    public void MoveRight()
-    {
-        _rb.velocity = new Vector3(moveSpeed, _rb.velocity.y, _rb.velocity.z);
-    }
-
-    private void MoveForward()
-    {
-        _rb.velocity = new Vector3(_rb.velocity.x, _rb.velocity.y, moveSpeed);
-    }
-
-    private void Dash()
-    {
-        if (!_dashCooldown)
+        private void FixedUpdate()
         {
-            _dashCooldown = true;
-            StartCoroutine(StartDash());
+            MoveForward();
         }
-    }
 
-    IEnumerator StartDash()
-    {
-        moveSpeed = dashSpeed;
-
-        yield return new WaitForSeconds(_dashTime);
-
-        moveSpeed = 5f;
-    }
-
-    private void DashCooldown()
-    {
-        if (_cooldownTimer > 0 && _dashCooldown)
+        private void GroundDetect()
         {
-            _cooldownTimer -= Time.deltaTime;
+            isGrounded = Physics.Raycast(transform.position, Vector3.down, groundDistance, groundLayer);
 
+            Debug.DrawRay(transform.position, Vector3.down * groundDistance, Color.red);
         }
-        else
+
+        private void OnCollisionEnter(Collision coll)
         {
-            _dashCooldown = false;
-            _cooldownTimer = _cooldownDuration;
+            if (coll.gameObject.CompareTag("Ground"))
+            {
+                _jumpCount = 0;
+            }
         }
-    }
+        
+        public void Jump()
+        {
+            if (_jumpCount < _maxJumps)
+            {
+                _rb.linearVelocity = new Vector3(_rb.linearVelocity.x, jumpForce, _rb.linearVelocity.z);
+                _jumpCount++;
+            }
+        }
 
+        public void MoveLeft()
+        {
+            _rb.linearVelocity = new Vector3(-moveSpeed, _rb.linearVelocity.y, _rb.linearVelocity.z);
+        }
 
-    void OnEnable()
-    {
-        EventManager.OnPlayerDash += Dash;
-    }
+        public void MoveRight()
+        {
+            _rb.linearVelocity = new Vector3(moveSpeed, _rb.linearVelocity.y, _rb.linearVelocity.z);
+        }
 
-    void OnDisable()
-    {
-        EventManager.OnPlayerDash -= Dash;
+        private void MoveForward()
+        {
+            _rb.linearVelocity = new Vector3(_rb.linearVelocity.x, _rb.linearVelocity.y, moveSpeed);
+        }
+
+        private void Dash()
+        {
+            if (!_dashCooldown)
+            {
+                _dashCooldown = true;
+                StartCoroutine(StartDash());
+            }
+        }
+
+        IEnumerator StartDash()
+        {
+            moveSpeed = dashSpeed;
+
+            yield return new WaitForSeconds(_dashTime);
+
+            moveSpeed = 5f;
+        }
+
+        private void DashCooldown()
+        {
+            if (_cooldownTimer > 0 && _dashCooldown)
+            {
+                _cooldownTimer -= Time.deltaTime;
+
+            }
+            else
+            {
+                _dashCooldown = false;
+                _cooldownTimer = _cooldownDuration;
+            }
+        }
+
+        void OnEnable()
+        {
+            EventManager.OnPlayerDash += Dash;
+        }
+
+        void OnDisable()
+        {
+            EventManager.OnPlayerDash -= Dash;
+        }
+
+        public int GetJumpCount() => _jumpCount;
+        
+        public bool GetDashCooldown() => _dashCooldown;
     }
 }

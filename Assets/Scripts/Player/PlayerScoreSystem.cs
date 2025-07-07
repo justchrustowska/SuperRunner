@@ -11,14 +11,24 @@ public class PlayerScoreSystem : MonoBehaviour
 
    private float _distanceTravelled;
    private Vector3 _startPos;
+   private float _previousRecord;
+   private float _currentRecord;
    public DistanceRecordConfig _newRecordConfig;
 
    public static event Action<double> OnPlayerDeathWithDistance;
    public static event Action OnNewRecordDistance;
+   public static event Action OnFailNewRecord;
 
     private void Awake()
     {
         _startPos = transform.position;
+        
+        if (PlayerPrefs.HasKey("HighScore"))
+        {
+            _newRecordConfig.newRecord = PlayerPrefs.GetFloat("HighScore");
+        }
+        
+        _previousRecord = _newRecordConfig.newRecord;
     }
     void Start()
     {
@@ -32,6 +42,7 @@ public class PlayerScoreSystem : MonoBehaviour
         double roundedDistance = Mathf.Round(_distanceTravelled);
 
         distanceTxt.text = "Distance: " + roundedDistance;
+        
     }
 
     private void PlayerDeath()
@@ -46,9 +57,16 @@ public class PlayerScoreSystem : MonoBehaviour
         var currentDistance = Mathf.Round(_distanceTravelled);
         if (currentDistance > _newRecordConfig.newRecord)
         {
+            _previousRecord = _newRecordConfig.newRecord;
             _newRecordConfig.newRecord = currentDistance;
-            NewRecordDistance?.Invoke();
+            PlayerPrefs.SetFloat("HighScore", currentDistance);
+            _newRecordConfig.newRecord = currentDistance;
+            OnNewRecordDistance?.Invoke();
         }
-        Debug.LogError(currentDistance); //dodac warunek gdy zostanie ustanowiony nowy rekord 
+        else
+        {
+            OnFailNewRecord?.Invoke();
+            Debug.LogError("fail record invoke event");
+        }
     }
 }

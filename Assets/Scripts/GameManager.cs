@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gameOverWindow;
     public GameObject newRecordWindow;
+    public GameObject failWindow;
     public TextMeshProUGUI distanceTxt;
     public TextMeshProUGUI distanceScoreTxt;
     public TextMeshProUGUI _collectedCoinsTxt;
@@ -45,25 +46,29 @@ public class GameManager : MonoBehaviour
          
     void OnEnable()
     {
-        EventManager.OnPlayerDeath += ShowGameOverlWindow;
+        //EventManager.OnPlayerDeath += ShowGameOverlWindow;
         EventManager.OnPlayerDash += DashCooldown;
         PlayerScoreSystem.OnPlayerDeathWithDistance += SaveFinalDistance;
-        PlayerScoreSystem.OnNewRecordDistance += 
+        PlayerScoreSystem.OnNewRecordDistance += NewRecordWindow;
+        PlayerScoreSystem.OnFailNewRecord += FailWindow;
     }
 
     void OnDisable()
     {
-        EventManager.OnPlayerDeath -= ShowGameOverlWindow;
+        //EventManager.OnPlayerDeath -= ShowGameOverlWindow;
         EventManager.OnPlayerDash -= DashCooldown;
         PlayerScoreSystem.OnPlayerDeathWithDistance -= SaveFinalDistance;
+        PlayerScoreSystem.OnNewRecordDistance -= NewRecordWindow;
+        PlayerScoreSystem.OnFailNewRecord -= FailWindow;
     }
 
-    void ShowGameOverlWindow()
+    void FailWindow()
     {
         gameOverWindow.SetActive(true);
+        failWindow.SetActive(true);
+        newRecordWindow.SetActive(false);
         Time.timeScale = 0f;
-        
-        if 
+        Debug.LogError("FAIL");
     }
 
     public void RestartGame()
@@ -78,9 +83,13 @@ public class GameManager : MonoBehaviour
         distanceScoreTxt.text = "Distance: " + roundedDistance.ToString();
     }
 
-    private void CheckNewRecordDistance()
+    private void NewRecordWindow()
     {
-        
+        gameOverWindow.SetActive(true);
+        failWindow.SetActive(false);
+        newRecordWindow.SetActive(true);
+        Time.timeScale = 0f;
+        Debug.LogError("NEW RECORD DISTANCE");
     }
 
     public void DashCooldown()

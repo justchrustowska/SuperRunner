@@ -7,66 +7,68 @@ using UnityEngine.UI;
 
 public class PlayerScoreSystem : MonoBehaviour
 {
-   public TextMeshProUGUI distanceTxt;
+    [SerializeField] private TextMeshProUGUI distanceText;
+    public static PlayerScoreSystem Instance { get; private set; }
 
-   private float _distanceTravelled;
-   private Vector3 _startPos;
-   private float _previousRecord;
-   private float _currentRecord;
-   public DistanceRecordConfig _newRecordConfig;
+    public float CurrentDistance { get; private set; }
+    public float BestDistance { get; private set; }
 
-   public static event Action<double> OnPlayerDeathWithDistance;
-   public static event Action OnNewRecordDistance;
-   public static event Action OnFailNewRecord;
+    private Vector3 _startPosition;
+    private bool _isTracking = false;
 
     private void Awake()
     {
-        _startPos = transform.position;
-        
-        if (PlayerPrefs.HasKey("HighScore"))
+        if (Instance != null && Instance != this)
         {
-            _newRecordConfig.newRecord = PlayerPrefs.GetFloat("HighScore");
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        BestDistance = PlayerPrefs.GetFloat("BestDistance", 0f);
+    }
+
+    public void StartTracking(Transform player)
+    {
+        _startPosition = player.position;
+        CurrentDistance = 0f;
+        _isTracking = true;
+    }
+
+    public void StopTracking()
+    {
+        _isTracking = false;
+    }
+
+    private void Update()
+    {
+        if (!_isTracking) return;
+
+        var player = FindObjectOfType<PlayerController>();
+        if (player != null)
+        {
+            CurrentDistance = Vector3.Distance(_startPosition, player.transform.position);
+            
+            if (CurrentDistance > BestDistance)
+            {
+                BestDistance = CurrentDistance;
+            }
         }
         
-        _previousRecord = _newRecordConfig.newRecord;
-    }
-    void Start()
-    {
-        EventManager.OnPlayerDeath += PlayerDeath;
+        double roundedDistance = Mathf.Round(CurrentDistance);
+
+        distanceText.text = "Distance: " + roundedDistance;
     }
 
-    void Update()
+    public void SaveBestDistance(float distance)
     {
-        _distanceTravelled = Vector3.Distance(_startPos, transform.position);
-
-        double roundedDistance = Mathf.Round(_distanceTravelled);
-
-        distanceTxt.text = "Distance: " + roundedDistance;
-        
-    }
-
-    private void PlayerDeath()
-    {
-        double roundedDistance = Mathf.Round(_distanceTravelled);
-        OnPlayerDeathWithDistance?.Invoke(roundedDistance);
-        CheckNewRecord();
-    }
-
-    private void CheckNewRecord()
-    {
-        var currentDistance = Mathf.Round(_distanceTravelled);
-        if (currentDistance > _newRecordConfig.newRecord)
+        if (distance > BestDistance)
         {
-            _previousRecord = _newRecordConfig.newRecord;
-            _newRecordConfig.newRecord = currentDistance;
-            PlayerPrefs.SetFloat("HighScore", currentDistance);
-            _newRecordConfig.newRecord = currentDistance;
-            OnNewRecordDistance?.Invoke();
-        }
-        else
-        {
-            OnFailNewRecord?.Invoke();
-            Debug.LogError("fail record invoke event");
+            BestDistance = distance;
+            PlayerPrefs.SetFloat("BestDistance", distance);
+            PlayerPrefs.Save();
         }
     }
 }

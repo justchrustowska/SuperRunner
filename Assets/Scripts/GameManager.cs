@@ -46,20 +46,13 @@ public class GameManager : MonoBehaviour
          
     void OnEnable()
     {
-        //EventManager.OnPlayerDeath += ShowGameOverlWindow;
         EventManager.OnPlayerDash += DashCooldown;
-        PlayerScoreSystem.OnPlayerDeathWithDistance += SaveFinalDistance;
-        PlayerScoreSystem.OnNewRecordDistance += NewRecordWindow;
-        PlayerScoreSystem.OnFailNewRecord += FailWindow;
     }
 
     void OnDisable()
     {
         //EventManager.OnPlayerDeath -= ShowGameOverlWindow;
         EventManager.OnPlayerDash -= DashCooldown;
-        PlayerScoreSystem.OnPlayerDeathWithDistance -= SaveFinalDistance;
-        PlayerScoreSystem.OnNewRecordDistance -= NewRecordWindow;
-        PlayerScoreSystem.OnFailNewRecord -= FailWindow;
     }
 
     void FailWindow()

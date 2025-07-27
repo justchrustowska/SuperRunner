@@ -27,6 +27,7 @@ public class GameInitializer : MonoBehaviour
     {
         GameStarted = true;
         Time.timeScale = 1f;
+        PlayerScoreSystem.Instance.StartTracking(playerController.transform);
 
         if (playButton != null)
             playButton.SetActive(false);

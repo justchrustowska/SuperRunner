@@ -1,0 +1,33 @@
+<svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Circular replay arrow -->
+  <path
+    d="M4 12a8 8 0 018-8V2.5L14.5 5 12 7.5V6a6 6 0 100 12 6 6 0 006-6"
+    stroke="#f59e0b"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <!-- Additional circular accent -->
+  <circle
+    cx="12"
+    cy="12"
+    r="2"
+    fill="#f59e0b"
+    opacity="0.6"
+  />
+  <!-- Inner highlight -->
+  <circle
+    cx="11"
+    cy="11"
+    r="1"
+    fill="white"
+    opacity="0.5"
+  />
+</svg>

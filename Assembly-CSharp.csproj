@@ -56,6 +56,7 @@
     <None Include="Library\PackageCache\com.unity.ugui\package.json" />
     <None Include="Library\PackageCache\com.unity.cinemachine\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.ext.nunit\package.json" />
+    <None Include="Library\PackageCache\com.unity.vectorgraphics\package.json" />
     <None Include="Library\PackageCache\com.unity.render-pipelines.universal-config\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.assetbundle\package.json" />
     <None Include="Library\PackageCache\com.unity.render-pipelines.core\Shaders\CoreCopy.shader" />
@@ -115,6 +116,7 @@
     <None Include="Library\PackageCache\com.unity.modules.director\package.json" />
     <None Include="Library\PackageCache\com.unity.visualscripting\ValidationConfig.json" />
     <None Include="Library\PackageCache\com.unity.modules.terrain\package.json" />
+    <None Include="Library\PackageCache\com.unity.2d.sprite\package.json" />
     <None Include="Library\PackageCache\com.unity.collections\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.androidjni\package.json" />
     <None Include="Library\PackageCache\com.unity.ugui\PackageConversionData_Assets.json" />
